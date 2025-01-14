@@ -31,14 +31,14 @@ Reformatting the M.2 SSD
 2. Mount the Reformatted Partition
   - Ensure a mount point exists (if not already created):
     sudo mkdir /mnt/ssd
-3.	Mount the newly formatted partition:
+3. Mount the newly formatted partition:
     sudo mount /dev/nvme0n1p1 /mnt/ssd
 
 Verify the Setup
-1.	Reboot your Raspberry Pi:
-    sudo reboot
-2.	After reboot, confirm the SSD is mounted:
-    df -h
+1. Reboot your Raspberry Pi:
+   sudo reboot
+2. After reboot, confirm the SSD is mounted:
+   df -h
 
 
 
