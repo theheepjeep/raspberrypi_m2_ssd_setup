@@ -34,6 +34,14 @@ Reformatting the M.2 SSD
 3. Mount the newly formatted partition:
     sudo mount /dev/nvme0n1p1 /mnt/ssd
 
+Automate Mounting on Boot
+1. Edit the fstab file to enable automatic mounting:
+    sudo nano /etc/fstab
+2. Add this line:
+   /dev/nvme0n1p1 /mnt/ssd ext4 defaults 0 2
+3. Save and exit the editor.
+
+
 Verify the Setup
 1. Reboot your Raspberry Pi:
    sudo reboot
